@@ -32,23 +32,23 @@ namespace FormAppThing
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.TxtNum = new System.Windows.Forms.TextBox();
+            this.Txt1stName = new System.Windows.Forms.TextBox();
+            this.TxtLstName = new System.Windows.Forms.TextBox();
+            this.ChkC101 = new System.Windows.Forms.CheckBox();
+            this.ChkC102 = new System.Windows.Forms.CheckBox();
+            this.ChkP101 = new System.Windows.Forms.CheckBox();
+            this.ChkP110 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.TxtC101 = new System.Windows.Forms.TextBox();
+            this.TxtC102 = new System.Windows.Forms.TextBox();
+            this.TxtP101 = new System.Windows.Forms.TextBox();
+            this.TxtP110 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.RadPrg = new System.Windows.Forms.RadioButton();
+            this.RadWeb = new System.Windows.Forms.RadioButton();
+            this.RadPhil = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
@@ -82,67 +82,68 @@ namespace FormAppThing
             this.label3.Text = "Last Name:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // textBox1
+            // TxtNum
             // 
-            this.textBox1.Location = new System.Drawing.Point(135, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(274, 27);
-            this.textBox1.TabIndex = 3;
+            this.TxtNum.Location = new System.Drawing.Point(135, 6);
+            this.TxtNum.Name = "TxtNum";
+            this.TxtNum.Size = new System.Drawing.Size(274, 27);
+            this.TxtNum.TabIndex = 3;
             // 
-            // textBox2
+            // Txt1stName
             // 
-            this.textBox2.Location = new System.Drawing.Point(135, 65);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(274, 27);
-            this.textBox2.TabIndex = 4;
+            this.Txt1stName.Location = new System.Drawing.Point(135, 65);
+            this.Txt1stName.Name = "Txt1stName";
+            this.Txt1stName.Size = new System.Drawing.Size(274, 27);
+            this.Txt1stName.TabIndex = 4;
             // 
-            // textBox3
+            // TxtLstName
             // 
-            this.textBox3.Location = new System.Drawing.Point(135, 128);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(274, 27);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.TxtLstName.Location = new System.Drawing.Point(135, 128);
+            this.TxtLstName.Name = "TxtLstName";
+            this.TxtLstName.Size = new System.Drawing.Size(274, 27);
+            this.TxtLstName.TabIndex = 5;
+            this.TxtLstName.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // checkBox1
+            // ChkC101
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(107, 217);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(80, 24);
-            this.checkBox1.TabIndex = 6;
-            this.checkBox1.Text = "CIS 101";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.ChkC101.AutoSize = true;
+            this.ChkC101.Location = new System.Drawing.Point(107, 217);
+            this.ChkC101.Name = "ChkC101";
+            this.ChkC101.Size = new System.Drawing.Size(80, 24);
+            this.ChkC101.TabIndex = 6;
+            this.ChkC101.Text = "CIS 101";
+            this.ChkC101.UseVisualStyleBackColor = true;
+            this.ChkC101.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // checkBox2
+            // ChkC102
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(107, 261);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(80, 24);
-            this.checkBox2.TabIndex = 7;
-            this.checkBox2.Text = "CIS 102";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.ChkC102.AutoSize = true;
+            this.ChkC102.Location = new System.Drawing.Point(107, 261);
+            this.ChkC102.Name = "ChkC102";
+            this.ChkC102.Size = new System.Drawing.Size(80, 24);
+            this.ChkC102.TabIndex = 7;
+            this.ChkC102.Text = "CIS 102";
+            this.ChkC102.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // ChkP101
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(107, 302);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(83, 24);
-            this.checkBox3.TabIndex = 8;
-            this.checkBox3.Text = "Phil 101";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.ChkP101.AutoSize = true;
+            this.ChkP101.Location = new System.Drawing.Point(107, 302);
+            this.ChkP101.Name = "ChkP101";
+            this.ChkP101.Size = new System.Drawing.Size(83, 24);
+            this.ChkP101.TabIndex = 8;
+            this.ChkP101.Text = "Phil 101";
+            this.ChkP101.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // ChkP110
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(107, 347);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(83, 24);
-            this.checkBox4.TabIndex = 9;
-            this.checkBox4.Text = "Phil 110";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.ChkP110.AutoSize = true;
+            this.ChkP110.Location = new System.Drawing.Point(107, 347);
+            this.ChkP110.Name = "ChkP110";
+            this.ChkP110.Size = new System.Drawing.Size(83, 24);
+            this.ChkP110.TabIndex = 9;
+            this.ChkP110.Text = "Phil 110";
+            this.ChkP110.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -162,39 +163,39 @@ namespace FormAppThing
             this.label5.TabIndex = 11;
             this.label5.Text = "Scores";
             // 
-            // textBox4
+            // TxtC101
             // 
-            this.textBox4.Location = new System.Drawing.Point(252, 214);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 27);
-            this.textBox4.TabIndex = 12;
+            this.TxtC101.Location = new System.Drawing.Point(252, 214);
+            this.TxtC101.Name = "TxtC101";
+            this.TxtC101.Size = new System.Drawing.Size(125, 27);
+            this.TxtC101.TabIndex = 12;
             // 
-            // textBox5
+            // TxtC102
             // 
-            this.textBox5.Location = new System.Drawing.Point(252, 258);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(125, 27);
-            this.textBox5.TabIndex = 13;
+            this.TxtC102.Location = new System.Drawing.Point(252, 258);
+            this.TxtC102.Name = "TxtC102";
+            this.TxtC102.Size = new System.Drawing.Size(125, 27);
+            this.TxtC102.TabIndex = 13;
             // 
-            // textBox6
+            // TxtP101
             // 
-            this.textBox6.Location = new System.Drawing.Point(252, 300);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(125, 27);
-            this.textBox6.TabIndex = 14;
+            this.TxtP101.Location = new System.Drawing.Point(252, 300);
+            this.TxtP101.Name = "TxtP101";
+            this.TxtP101.Size = new System.Drawing.Size(125, 27);
+            this.TxtP101.TabIndex = 14;
             // 
-            // textBox7
+            // TxtP110
             // 
-            this.textBox7.Location = new System.Drawing.Point(252, 344);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(125, 27);
-            this.textBox7.TabIndex = 15;
+            this.TxtP110.Location = new System.Drawing.Point(252, 344);
+            this.TxtP110.Name = "TxtP110";
+            this.TxtP110.Size = new System.Drawing.Size(125, 27);
+            this.TxtP110.TabIndex = 15;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.RadPrg);
+            this.groupBox1.Controls.Add(this.RadWeb);
+            this.groupBox1.Controls.Add(this.RadPhil);
             this.groupBox1.Location = new System.Drawing.Point(451, 226);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(250, 145);
@@ -202,37 +203,37 @@ namespace FormAppThing
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
-            // radioButton1
+            // RadPrg
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(3, 23);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(102, 24);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.Text = "Philosophy";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RadPrg.AutoSize = true;
+            this.RadPrg.Checked = true;
+            this.RadPrg.Location = new System.Drawing.Point(102, 83);
+            this.RadPrg.Name = "RadPrg";
+            this.RadPrg.Size = new System.Drawing.Size(121, 24);
+            this.RadPrg.TabIndex = 2;
+            this.RadPrg.TabStop = true;
+            this.RadPrg.Text = "Programming";
+            this.RadPrg.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // RadWeb
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(51, 53);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(110, 24);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "Web Design";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.RadWeb.AutoSize = true;
+            this.RadWeb.Location = new System.Drawing.Point(51, 53);
+            this.RadWeb.Name = "RadWeb";
+            this.RadWeb.Size = new System.Drawing.Size(110, 24);
+            this.RadWeb.TabIndex = 1;
+            this.RadWeb.Text = "Web Design";
+            this.RadWeb.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // RadPhil
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Checked = true;
-            this.radioButton3.Location = new System.Drawing.Point(102, 83);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(121, 24);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Programming";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.RadPhil.AutoSize = true;
+            this.RadPhil.Location = new System.Drawing.Point(3, 23);
+            this.RadPhil.Name = "RadPhil";
+            this.RadPhil.Size = new System.Drawing.Size(102, 24);
+            this.RadPhil.TabIndex = 0;
+            this.RadPhil.Text = "Philosophy";
+            this.RadPhil.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -242,12 +243,14 @@ namespace FormAppThing
             this.button1.TabIndex = 18;
             this.button1.Text = "Submit to ME!";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox8
             // 
             this.textBox8.Location = new System.Drawing.Point(469, 32);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(232, 161);
             this.textBox8.TabIndex = 3;
             // 
@@ -259,24 +262,25 @@ namespace FormAppThing
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.TxtP110);
+            this.Controls.Add(this.TxtP101);
+            this.Controls.Add(this.TxtC102);
+            this.Controls.Add(this.TxtC101);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ChkP110);
+            this.Controls.Add(this.ChkP101);
+            this.Controls.Add(this.ChkC102);
+            this.Controls.Add(this.ChkC101);
+            this.Controls.Add(this.TxtLstName);
+            this.Controls.Add(this.Txt1stName);
+            this.Controls.Add(this.TxtNum);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -289,23 +293,23 @@ namespace FormAppThing
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.TextBox TxtNum;
+        private System.Windows.Forms.TextBox Txt1stName;
+        private System.Windows.Forms.TextBox TxtLstName;
+        private System.Windows.Forms.CheckBox ChkC101;
+        private System.Windows.Forms.CheckBox ChkC102;
+        private System.Windows.Forms.CheckBox ChkP101;
+        private System.Windows.Forms.CheckBox ChkP110;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox TxtC101;
+        private System.Windows.Forms.TextBox TxtC102;
+        private System.Windows.Forms.TextBox TxtP101;
+        private System.Windows.Forms.TextBox TxtP110;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton RadPhil;
+        private System.Windows.Forms.RadioButton RadPrg;
+        private System.Windows.Forms.RadioButton RadWeb;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox8;
     }
