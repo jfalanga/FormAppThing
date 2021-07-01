@@ -13,6 +13,7 @@ namespace FormAppThing
 {
     public partial class Form1 : Form
     {
+
         public Form1()
         {
             InitializeComponent();
@@ -55,9 +56,14 @@ namespace FormAppThing
             s.FirstName = Txt1stName.Text;
             s.LastName = TxtLstName.Text;
             s.StudentNumber = TxtNum.Text;
+            
             return s;
         }
 
+        public string[] Courses
+        {
+            get;set;
+        }
         
         private void button1_Click(object sender, EventArgs e)
         {
@@ -67,11 +73,24 @@ namespace FormAppThing
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //Easier to Doubleclick the Form to get to all the code, than
+            //to do anything else!
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void TxtNum_TextChanged(object sender, EventArgs e)
         {
+            short ix = 0;
+            Debug.WriteLine(Int16.TryParse(TxtNum.Text, out ix));
+            if (!Int16.TryParse(TxtNum.Text, out ix) && TxtNum.Text != "")
+            {
+                TxtNum.Text = "";
+            }
+        }
+
+        private void CheckChange(object sender, EventArgs e)
+        {
+            TxtC101.Visible = ChkC101.Checked;
+            TxtC102.Visible = ChkC102.Checked;
 
         }
     }

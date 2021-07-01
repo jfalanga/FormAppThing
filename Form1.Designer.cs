@@ -40,7 +40,7 @@ namespace FormAppThing
             this.ChkP101 = new System.Windows.Forms.CheckBox();
             this.ChkP110 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.LblScores = new System.Windows.Forms.Label();
             this.TxtC101 = new System.Windows.Forms.TextBox();
             this.TxtC102 = new System.Windows.Forms.TextBox();
             this.TxtP101 = new System.Windows.Forms.TextBox();
@@ -88,6 +88,7 @@ namespace FormAppThing
             this.TxtNum.Name = "TxtNum";
             this.TxtNum.Size = new System.Drawing.Size(274, 27);
             this.TxtNum.TabIndex = 3;
+            this.TxtNum.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
             // 
             // Txt1stName
             // 
@@ -113,7 +114,7 @@ namespace FormAppThing
             this.ChkC101.TabIndex = 6;
             this.ChkC101.Text = "CIS 101";
             this.ChkC101.UseVisualStyleBackColor = true;
-            this.ChkC101.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.ChkC101.CheckedChanged += new System.EventHandler(this.CheckChange);
             // 
             // ChkC102
             // 
@@ -124,6 +125,7 @@ namespace FormAppThing
             this.ChkC102.TabIndex = 7;
             this.ChkC102.Text = "CIS 102";
             this.ChkC102.UseVisualStyleBackColor = true;
+            this.ChkC102.CheckedChanged += new System.EventHandler(this.CheckChange);
             // 
             // ChkP101
             // 
@@ -134,6 +136,7 @@ namespace FormAppThing
             this.ChkP101.TabIndex = 8;
             this.ChkP101.Text = "Phil 101";
             this.ChkP101.UseVisualStyleBackColor = true;
+            this.ChkP101.CheckedChanged += new System.EventHandler(this.CheckChange);
             // 
             // ChkP110
             // 
@@ -144,6 +147,7 @@ namespace FormAppThing
             this.ChkP110.TabIndex = 9;
             this.ChkP110.Text = "Phil 110";
             this.ChkP110.UseVisualStyleBackColor = true;
+            this.ChkP110.CheckedChanged += new System.EventHandler(this.CheckChange);
             // 
             // label4
             // 
@@ -154,14 +158,15 @@ namespace FormAppThing
             this.label4.TabIndex = 10;
             this.label4.Text = "Courses:";
             // 
-            // label5
+            // LblScores
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(264, 173);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 20);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Scores";
+            this.LblScores.AutoSize = true;
+            this.LblScores.Location = new System.Drawing.Point(264, 173);
+            this.LblScores.Name = "LblScores";
+            this.LblScores.Size = new System.Drawing.Size(52, 20);
+            this.LblScores.TabIndex = 11;
+            this.LblScores.Text = "Scores";
+            this.LblScores.Visible = false;
             // 
             // TxtC101
             // 
@@ -169,6 +174,8 @@ namespace FormAppThing
             this.TxtC101.Name = "TxtC101";
             this.TxtC101.Size = new System.Drawing.Size(125, 27);
             this.TxtC101.TabIndex = 12;
+            this.TxtC101.Visible = false;
+            this.TxtC101.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
             // 
             // TxtC102
             // 
@@ -176,6 +183,8 @@ namespace FormAppThing
             this.TxtC102.Name = "TxtC102";
             this.TxtC102.Size = new System.Drawing.Size(125, 27);
             this.TxtC102.TabIndex = 13;
+            this.TxtC102.Visible = false;
+            this.TxtC102.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
             // 
             // TxtP101
             // 
@@ -183,6 +192,8 @@ namespace FormAppThing
             this.TxtP101.Name = "TxtP101";
             this.TxtP101.Size = new System.Drawing.Size(125, 27);
             this.TxtP101.TabIndex = 14;
+            this.TxtP101.Visible = false;
+            this.TxtP101.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
             // 
             // TxtP110
             // 
@@ -190,6 +201,8 @@ namespace FormAppThing
             this.TxtP110.Name = "TxtP110";
             this.TxtP110.Size = new System.Drawing.Size(125, 27);
             this.TxtP110.TabIndex = 15;
+            this.TxtP110.Visible = false;
+            this.TxtP110.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
             // 
             // groupBox1
             // 
@@ -201,7 +214,7 @@ namespace FormAppThing
             this.groupBox1.Size = new System.Drawing.Size(250, 145);
             this.groupBox1.TabIndex = 17;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Major:";
             // 
             // RadPrg
             // 
@@ -266,7 +279,7 @@ namespace FormAppThing
             this.Controls.Add(this.TxtP101);
             this.Controls.Add(this.TxtC102);
             this.Controls.Add(this.TxtC101);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.LblScores);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.ChkP110);
             this.Controls.Add(this.ChkP101);
@@ -301,7 +314,7 @@ namespace FormAppThing
         private System.Windows.Forms.CheckBox ChkP101;
         private System.Windows.Forms.CheckBox ChkP110;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label LblScores;
         private System.Windows.Forms.TextBox TxtC101;
         private System.Windows.Forms.TextBox TxtC102;
         private System.Windows.Forms.TextBox TxtP101;
