@@ -50,7 +50,7 @@ namespace FormAppThing
             this.RadWeb = new System.Windows.Forms.RadioButton();
             this.RadPhil = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.TxtDisplay = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +80,6 @@ namespace FormAppThing
             this.label3.Size = new System.Drawing.Size(82, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Last Name:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // TxtNum
             // 
@@ -103,7 +102,6 @@ namespace FormAppThing
             this.TxtLstName.Name = "TxtLstName";
             this.TxtLstName.Size = new System.Drawing.Size(274, 27);
             this.TxtLstName.TabIndex = 5;
-            this.TxtLstName.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // ChkC101
             // 
@@ -175,7 +173,7 @@ namespace FormAppThing
             this.TxtC101.Size = new System.Drawing.Size(125, 27);
             this.TxtC101.TabIndex = 12;
             this.TxtC101.Visible = false;
-            this.TxtC101.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
+            this.TxtC101.TextChanged += new System.EventHandler(this.TxtC101_Changed);
             // 
             // TxtC102
             // 
@@ -184,7 +182,7 @@ namespace FormAppThing
             this.TxtC102.Size = new System.Drawing.Size(125, 27);
             this.TxtC102.TabIndex = 13;
             this.TxtC102.Visible = false;
-            this.TxtC102.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
+            this.TxtC102.TextChanged += new System.EventHandler(this.TxtC102_Changed);
             // 
             // TxtP101
             // 
@@ -193,7 +191,7 @@ namespace FormAppThing
             this.TxtP101.Size = new System.Drawing.Size(125, 27);
             this.TxtP101.TabIndex = 14;
             this.TxtP101.Visible = false;
-            this.TxtP101.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
+            this.TxtP101.TextChanged += new System.EventHandler(this.TxtP101_Changed);
             // 
             // TxtP110
             // 
@@ -202,7 +200,7 @@ namespace FormAppThing
             this.TxtP110.Size = new System.Drawing.Size(125, 27);
             this.TxtP110.TabIndex = 15;
             this.TxtP110.Visible = false;
-            this.TxtP110.TextChanged += new System.EventHandler(this.TxtNum_TextChanged);
+            this.TxtP110.TextChanged += new System.EventHandler(this.TxtP110_Changed);
             // 
             // groupBox1
             // 
@@ -254,25 +252,25 @@ namespace FormAppThing
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 29);
             this.button1.TabIndex = 18;
-            this.button1.Text = "Submit to ME!";
+            this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox8
+            // TxtDisplay
             // 
-            this.textBox8.Location = new System.Drawing.Point(469, 32);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(232, 161);
-            this.textBox8.TabIndex = 3;
+            this.TxtDisplay.Location = new System.Drawing.Point(469, 32);
+            this.TxtDisplay.Multiline = true;
+            this.TxtDisplay.Name = "TxtDisplay";
+            this.TxtDisplay.ReadOnly = true;
+            this.TxtDisplay.Size = new System.Drawing.Size(232, 161);
+            this.TxtDisplay.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.TxtDisplay);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.TxtP110);
@@ -324,7 +322,7 @@ namespace FormAppThing
         private System.Windows.Forms.RadioButton RadPrg;
         private System.Windows.Forms.RadioButton RadWeb;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox TxtDisplay;
     }
 }
 
